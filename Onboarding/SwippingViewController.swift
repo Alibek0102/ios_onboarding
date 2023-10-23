@@ -75,6 +75,7 @@ class SwippingViewController: UICollectionViewController, UICollectionViewDelega
         collectionView.register(CellForOnb.self, forCellWithReuseIdentifier: "cellId")
         collectionView.isPagingEnabled = true
         setBottomControls()
+        collectionView.showsHorizontalScrollIndicator = false
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
